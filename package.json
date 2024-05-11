@@ -1,0 +1,27 @@
+{
+  "name": "staj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "olustur": "node dbEkle.js",
+    "cron": " node cron.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.12.0",
+    "axios": "^1.3.4",
+    "cheerio": "^1.0.0-rc.12",
+    "cron": "^2.3.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.2",
+    "nodemon": "^2.0.22",
+    "shelljs": "^0.8.5"
+  },
+  "devDependencies": {
+    "prisma": "^4.12.0"
+  }
+}
