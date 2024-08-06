@@ -1,6 +1,6 @@
 # Deprem Tespiti Projesi
 
-Bu proje, belirli bir bölgede meydana gelen depremleri tespit etmek ve bildirimlerde bulunmak amacıyla geliştirilmiştir. Proje, depremlerin veritabanına kaydedilmesini ve çeşitli rotalar üzerinden erişilebilmesini sağlar.
+Bu proje, belirli bir bölgede meydana gelen depremleri tespit etmek ve bildirimlerde bulunarak bu depremleri haber yapmak amacıyla geliştirilmiştir. Proje, depremlerin veritabanına kaydedilmesini ve çeşitli rotalar üzerinden erişilebilmesini sağlar.
 
 ## Proje Yapısı
 
