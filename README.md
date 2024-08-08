@@ -47,27 +47,26 @@ Bu proje, belirli bir bölgede meydana gelen depremleri tespit etmek ve bildirim
    Bu rota, veritabanında kayıtlı olan tüm depremleri döner.
 
    Örnek İstek:
-
-  ```bash
-  curl -X GET http://localhost:3000/deprem
-  ```
-
+ 
+   ```bash
+   curl -X GET http://localhost:3000/deprem
+   ```
 Yanıt:
-
-    ```json
-    [
-     {
-       "id": 1,
-       "tarih": "2024-01-01",
-       "saat": "12:34:56",
-       "enlem": "38.123",
-       "boylam": "27.123",
-       "derinlik": "10 km",
-       "şiddet": "4.5"
-      },
   
-    ]
-
+ ```json
+ [
+  {
+   "id": 1,
+   "tarih": "2024-01-01",
+   "saat": "12:34:56",
+   "enlem": "38.123",
+   "boylam": "27.123",
+   "derinlik": "10 km",
+   "şiddet": "4.5"
+  },
+          
+]
+ ```
 
 POST /deprem
 
@@ -75,29 +74,34 @@ Bu rota, yeni bir deprem verisini veritabanına ekler. İstek gövdesi aşağıd
 
 İstek Gövdesi:
 
-    ```json
-     {
-    "tarih": "2024-01-01",
-    "saat": "12:34:56",
-    "enlem": "38.123",
-    "boylam": "27.123",
-    "derinlik": "10 km",
-    "şiddet": "4.5"
-    }
-   
+```json
+{
+ "tarih": "2024-01-01",
+ "saat": "12:34:56",
+ "enlem": "38.123",
+ "boylam": "27.123",
+ "derinlik": "10 km",
+ "şiddet": "4.5"
+}
+``` 
 
 Örnek İstek:
 
-    ```bash
-    curl -X POST http://localhost:3000/deprem -H "Content-Type: application/json" -d 
-    '{
-    "tarih": "2024-01-01",
-    "saat": "12:34:56",
-    "enlem": "38.123",
-    "boylam": "27.123",
-    "derinlik": "10 km",
-    "şiddet": "4.5"
-    }'
+```bash
+curl -X POST http://localhost:3000/deprem -H "Content-Type: application/json" -d
+```
+
+```bash
+    
+{
+ "tarih": "2024-01-01",
+ "saat": "12:34:56",
+ "enlem": "38.123",
+ "boylam": "27.123",
+ "derinlik": "10 km",
+ "şiddet": "4.5"
+}
+```
 
 Yanıt:
 
